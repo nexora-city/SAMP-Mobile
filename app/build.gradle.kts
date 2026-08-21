@@ -7,10 +7,10 @@ plugins {
 android {
     compileSdk = 36
 
-    namespace = "com.nexoracityrp.mobile"
+    namespace = "com.gta.game"
 
     defaultConfig {
-        applicationId = "com.nexoracityrp.mobile"
+        applicationId = "com.gta.game"
         minSdk = 28
         targetSdk = 36
         versionCode = 1
