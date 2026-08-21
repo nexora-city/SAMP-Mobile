@@ -21,14 +21,14 @@ android {
     }
     compileSdk 34
     allprojects {repositories {maven { url 'https://maven.aliyun.com/repository/jcenter' }}}
-    namespace 'com.samp.mobile'
+    namespace 'com.nexoracityrp.mobile'
 
     defaultConfig {
-        applicationId "com.samp.mobile"
+        applicationId "com.nexoracityrp.mobile"
         minSdk 26
         targetSdk 34
         versionCode 105
-        versionName "0.8.2.1"
+        versionName "Nexora City RP"
 
         multiDexEnabled true
 
@@ -67,10 +67,6 @@ android {
         }
         release {
             firebaseCrashlytics {
-                // Enable processing and uploading of native symbols to Firebase servers.
-                // By default, this is disabled to improve build speeds.
-                // This flag must be enabled to see properly-symbolicated native
-                // stack traces in the Crashlytics dashboard.
                 nativeSymbolUploadEnabled true
                 strippedNativeLibsDir 'build/intermediates/stripped_native_libs/release/out/lib'
                 unstrippedNativeLibsDir 'build/intermediates/merged_native_libs/release/out/lib'
@@ -91,8 +87,6 @@ android {
     }
     lintOptions {
         checkReleaseBuilds false
-        // Or, if you prefer, you can continue to check for errors in release builds,
-        // but continue the build even when errors are found:
         abortOnError false
     }
     buildFeatures {
